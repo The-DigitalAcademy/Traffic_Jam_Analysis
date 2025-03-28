@@ -69,6 +69,7 @@ if st.button("Predict"):
         X = standardize_data(X)
 
         prediction = model.predict(X)
-        st.success(f"Predicted Number of Tickets: {prediction[0]}")
+        prediction_int = int(prediction[0])
+        st.success(f"Predicted Number of Tickets: {prediction_int}")
     else:
         st.error("Please fill in all fields.")
