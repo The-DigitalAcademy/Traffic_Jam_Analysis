@@ -36,8 +36,7 @@ st.subheader("Enter details to predict ticket sales")
 
 travel_from_options = travel_from_encoder.classes_
 car_type_options = car_type_encoder.classes_
-date_options = [f"{day:02d}-03-25" for day in range(1, 32)]
-time_options = [f"{hour:02d}:{minute:02d}" for hour in range(24) for minute in [0, 30]]
+
 
 
 travel_from = st.selectbox("Travel From (Location)", travel_from_options)
